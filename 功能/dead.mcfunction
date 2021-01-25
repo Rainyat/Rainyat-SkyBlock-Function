@@ -74,6 +74,7 @@ tellraw @a[scores={level=3,temp=444,language=3},tag=dead] {"rawtext":[{"text":"�
 tellraw @a[scores={level=4,temp=444,language=3},tag=dead] {"rawtext":[{"text":"§l§eSkyBlock§f>>§r§f§cあなたは死にました！§f死亡は硬貨を差し引かない。"}]}
 tellraw @a[scores={level=5,temp=444,language=3},tag=dead] {"rawtext":[{"text":"§l§eSkyBlock§f>>§r§f§cあなたは死にました！§f死亡は硬貨を差し引かない。"}]}
 effect @a[scores={temp=444}] resistance 30 2 true
-effect @a[scores={temp=444},tag=dead] regeneration 30 2 true
-effect @a[scores={temp=444},tag=dead] health_boost 45 2 true
-tag @a[scores={temp=444},tag=!dead] add dead
+effect @a[scores={temp=444}] regeneration 30 2 true
+effect @a[scores={temp=444}] health_boost 45 2 true
+tp @a[scores={temp=444}] 0 150 0
+scoreboard players reset @a[scores={temp=444}] temp
